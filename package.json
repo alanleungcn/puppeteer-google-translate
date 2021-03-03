@@ -1,0 +1,38 @@
+{
+	"name": "puppeteer-google-translate",
+	"version": "1.0.0",
+	"description": "Translate texts or documents with Google Translate using Puppeteer",
+	"types": "lib/index.d.ts",
+	"main": "lib/index.js",
+	"author": "Alan Leung",
+	"license": "MIT",
+	"files": [
+		"lib"
+	],
+	"keywords": [
+		"puppeteer",
+		"google",
+		"translate"
+	],
+	"homepage": "https://github.com/AlanLeung0919/puppeteer-google-translate",
+	"bugs": "https://github.com/AlanLeung0919/puppeteer-google-translate/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AlanLeung0919/puppeteer-google-translate"
+	},
+	"scripts": {
+		"test": "jest",
+		"format": "prettier --w .",
+		"build": "rm -rf ./lib && tsc"
+	},
+	"dependencies": {
+		"puppeteer": "^8.0.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.20",
+		"@types/puppeteer": "^5.4.3",
+		"prettier": "^2.2.1",
+		"ts-jest": "^26.5.2",
+		"typescript": "^4.2.2"
+	}
+}
