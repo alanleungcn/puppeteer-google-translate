@@ -14,11 +14,11 @@
 		"google",
 		"translate"
 	],
-	"homepage": "https://github.com/AlanLeung0919/puppeteer-google-translate",
-	"bugs": "https://github.com/AlanLeung0919/puppeteer-google-translate/issues",
+	"homepage": "https://github.com/alanleungcn/puppeteer-google-translate",
+	"bugs": "https://github.com/alanleungcn/puppeteer-google-translate/issues",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/AlanLeung0919/puppeteer-google-translate"
+		"url": "https://github.com/alanleungcn/puppeteer-google-translate"
 	},
 	"scripts": {
 		"test": "jest",

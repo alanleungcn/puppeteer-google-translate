@@ -8,5 +8,5 @@ export default (opt: Query): string => {
 		if (text.length > 5000) return errTextOverflow(text.length);
 		if (text.length === 0) return errTextLenZero();
 	}
-	return `?text=${text}&sl=${from}&tl=${to}&op=${op}`;
+	return `?text=${encodeURIComponent(text)}&sl=${from}&tl=${to}&op=${op}`;
 };

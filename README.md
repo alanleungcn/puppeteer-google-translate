@@ -13,14 +13,15 @@ npm i puppeteer-google-translate
 ```js
 const { translateText, translateDocs } = require('puppeteer-google-translate');
 
-const opt = { to: 'en', from: 'eo', timeout: 10000, headless: true };
-// translate from English to Esperanto
+const opt = { from: 'en', to: 'es', timeout: 10000, headless: true };
+// translate from English to Spanish
+
 translateText('text', opt).then((result) => {
-	// result: teksto
+	// result: texto
 });
 
 translateText(['text', 'array'], opt).then((result) => {
-	// result: ['teksto', 'tabelo']
+	// result: ['texto', 'formación']
 });
 
 translateDocs('txt.txt', opt).then((result) => {
