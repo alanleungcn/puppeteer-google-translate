@@ -22,7 +22,7 @@ export default async (
 				page.click('label')
 			]);
 			await fileChooser.accept([path[i]]);
-			await page.click('form>div>div>button');
+			await page.click('form>div>div>div>button');
 			await page.waitForNavigation();
 			let el: ElementHandle;
 			if (extension === 'txt')
