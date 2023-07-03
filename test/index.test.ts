@@ -1,5 +1,6 @@
+import { expect, jest, test } from '@jest/globals';
+import { translateDocs, translateText } from '../src/index';
 import { Options } from '../src/types';
-import { translateText, translateDocs } from '../src/index';
 
 const opt: Options = { to: 'es', headless: true };
 
@@ -21,9 +22,6 @@ test('docs', async () => {
 });
 
 test('docsArray', async () => {
-	const result = await translateDocs(
-		['./test/assets/txt.txt', './test/assets/docx.docx'],
-		opt
-	);
+	const result = await translateDocs(['./test/assets/txt.txt', './test/assets/docx.docx'], opt);
 	expect(result).toStrictEqual(['TXT', 'docx']);
 });

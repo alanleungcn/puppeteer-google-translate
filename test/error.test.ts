@@ -1,5 +1,6 @@
+import { describe, expect, jest, test } from '@jest/globals';
+import { translateDocs, translateText } from '../src/index';
 import { Options } from '../src/types';
-import { translateText, translateDocs } from '../src/index';
 
 const opt: Options = { to: 'eo', headless: false };
 
@@ -7,14 +8,10 @@ jest.setTimeout(10000);
 
 describe('fileSize', () => {
 	test('docs', async () => {
-		await expect(
-			translateDocs('./test/assets/limit.txt', opt)
-		).rejects.toThrow();
+		await expect(translateDocs('./test/assets/limit.txt', opt)).rejects.toThrow();
 	});
 	test('docsArray', async () => {
-		await expect(
-			translateDocs(['./test/assets/limit.txt'], opt)
-		).rejects.toThrow();
+		await expect(translateDocs(['./test/assets/limit.txt'], opt)).rejects.toThrow();
 	});
 });
 
@@ -23,9 +20,7 @@ describe('fileType', () => {
 		await expect(translateDocs('./test/assets/err.err', opt)).rejects.toThrow();
 	});
 	test('docsArray', async () => {
-		await expect(
-			translateDocs(['./test/assets/err.err'], opt)
-		).rejects.toThrow();
+		await expect(translateDocs(['./test/assets/err.err'], opt)).rejects.toThrow();
 	});
 });
 
